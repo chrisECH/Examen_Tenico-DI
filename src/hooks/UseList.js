@@ -30,7 +30,7 @@ const UseList = (apiList) => {
     
     }, [urlList]);
 
-    console.log(dataList);
+    
     return {dataList, errorList,loadingList, setUrlList};
 }
 

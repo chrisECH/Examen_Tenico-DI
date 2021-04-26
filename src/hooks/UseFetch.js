@@ -10,7 +10,7 @@ const UseFetch = (apiUrl) => {
     useEffect(() => {
         if(!url) return;
         setLoading(true);
-        setData(null);
+        setData(data);
         setError(null);
 
         fetch(url)
@@ -29,7 +29,7 @@ const UseFetch = (apiUrl) => {
             });
         
     }, [url]);
-    console.log(data);
+    
     return {data, error,loading, setUrl};
     
 }

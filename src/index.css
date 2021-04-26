@@ -11,7 +11,6 @@
 
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #000000;
     background-image: linear-gradient(90deg, #0093E9 0%, #4fd8c8 100%);
     display: flex;
     justify-content: center;
@@ -19,6 +18,20 @@ body{
     width: 100%;
     
 }
+
+.logo-container{
+    position: relative;
+    animation-name: logoContainer;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes logoContainer {
+    0%   {  top:600px;}
+    100% { top:0px;}
+  }
+
 .container .logo .main-title{
     color: rgb(253, 253, 253);
     font-family: 'Knewave', cursive;
@@ -58,29 +71,10 @@ body{
 
 
 
-.contenedor-card{
-    margin-top:30px;
-    margin-bottom: 20px;
-    width: 400px;
-    max-width: 400px;
-    height:600px;
-    
-}
 .card {
     background-color: rgba(22, 21, 21, 0.199);
 }
-.card .row img{
-    align-self: center;
-    height: 250px;
-    width: 250px;
-    
-}
 
-.contenedor-card .card-body{
-    
-    width:100%; 
-    height:100%;
-}
 
 .card .title-card-container{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -89,7 +83,7 @@ body{
     font-size: 40px;
 }
 
-.card-body h5,p{
+.card-body p{
     font-size: 20px;
     text-align:center;
 }
@@ -97,19 +91,15 @@ body{
 .card-body h5{
     color: #fff;
     font-size: 40px;
+    text-align: center;
 }
 
+
+
+
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1224px) {
-    .contenedor-card{
-        margin-top:30px;
-        margin-bottom: 20px;
-        width: 1000px;
-        max-width: 1000px;
-        min-width: none;
-        height:600px;
-        display: flex;
-        justify-content: center;
-    }
+    
     .card {
         background-color: rgba(22, 21, 21, 0.199);
     }
@@ -120,49 +110,17 @@ body{
         
     }
     
-    .container .card-body{
-        display: block;
-    }
-    .card .title-card-container{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
-        color: #fff;
-    }
 
-    .container .card-body .card-text{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .container .card-body .card-title{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
-        font-size: 40px;
-    }
-    
-    .contenedor-tabla{
-        width:800px;
-        
-    }
-
-    .contenedor-tabla table{
-        width:100%;
-        margin-left: 10px;
-        display: block;
-        justify-content:center;
+    .centrar{
+        width: 500px;
     }
 }
 
 
 @media only screen and (min-device-width : 1224px) {
-    .contenedor-card{
-        margin-top:30px;
-        margin-bottom: 20px;
-        width: 1000px;
-        max-width: 1000px;
-        min-width: none;
-        height:600px;
-        display: flex;
-        justify-content: center;
+    
+
+    .centrar{
+        width: 700px;
     }
 }

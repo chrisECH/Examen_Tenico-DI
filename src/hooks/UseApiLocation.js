@@ -28,7 +28,7 @@ const UseApiLocation = (locationUrl) => {
             });
         
     }, [urlLocation]);
-    console.log(dataLocation);
+    
     return {dataLocation, errorLocation,loadingLocation, setUrlLocation};
 
 }
